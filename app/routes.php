@@ -11,7 +11,13 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'GeneratorController@showIndex');
+Route::get('paragraph', 'GeneratorController@getCreateParagraph');
+Route::post('paragraph', 'GeneratorController@postCreateParagraph');
+
+Route::get('user', 'GeneratorController@getCreateUser');
+Route::post('user', 'GeneratorController@postCreateUser');
+
+
+
+
