@@ -30,15 +30,21 @@ class GeneratorController extends BaseController {
 	//This function requires "fzaninotto/faker": "1.5.*@dev"
 	public function postCreateUser() {
 		$userData = (int)Input::get('num_user');
+		$userEmail = Input::get('add_email');
+		$userAddress = Input::get('add_address');
 
 		// use the factory to create a Faker\Generator instance
 		$faker = Faker\Factory::create();
 		
 		for($i = 0; $i < $userData; $i++) {
-		      echo '<p>'.$faker->name.'</p>';  
-			  echo '<p>'.$faker->address.'</p>'; 
-		      echo '<p>'.$faker->email.'</p>'; 
-		      echo '<br>';
+		    echo '<p>'.$faker->name.'</p>';  
+		    if (($userEmail)!=NULL){
+		      	echo '<p>'.$faker->email.'</p>'; 
+		    }
+			if (($userAddress)!=NULL){
+		      	echo '<p>'.$faker->address.'</p>'; 
+		    }		   
+		    echo '<br>';
 		}
 
 	}
