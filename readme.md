@@ -4,12 +4,16 @@ http://p3xiazhang.gopagoda.com
 Project 3: Random Paragraph and User Generator
 
 #Details for teaching team
-NA
+Not sure why the BootStrap column layout does not work for Safari. 
+
+
 
 #Outside code
 BootStrap http://getbootstrap.com/
 
-Random Tests are from https://packagist.org/packages/badcow/lorem-ipsum.
+Jquery validation plugin http://jqueryvalidation.org/
+
+Random Texts are from https://packagist.org/packages/badcow/lorem-ipsum.
 
 Random Users are from https://github.com/fzaninotto/Faker.
 
