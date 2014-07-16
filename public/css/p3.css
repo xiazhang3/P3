@@ -1,0 +1,7 @@
+.errors {
+	color: #FF0000 ;
+}
+
+.errors li {
+	 list-style-type: none;
+}
