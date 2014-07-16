@@ -7,9 +7,20 @@
 	<meta name="description" content="Project 1: A simple introduction">
 	<meta name="author" content="Xia Zhang">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	
 	
 	<link rel="stylesheet" href="styles/p3.css" type="text/css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>	
+
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+
+
+
+
+
 
 </head>
 
@@ -22,7 +33,16 @@
 
 			@yield('content')
 
+			<!--show return home btn in pages except the homepage-->
+			@section('returnHome')
+			<br>
+			<a href='{{ url("/") }}' class="btn btn-primary btn-sm" role="button">Return to Homepage</a>
+			@show
+
 	</div>
+
+
+
 
 </body>
 
